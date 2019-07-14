@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>qa-engineer</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Переход по ссылке</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://blog.csssr.ru/qa-engineer/<datalist><option>http://blog.csssr.ru/qa-engineer/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=НАХОДИТЬ НЕСОВЕРШЕНСТВА<datalist><option>link=НАХОДИТЬ НЕСОВЕРШЕНСТВА</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Софт для быстрого создания скриншотов<datalist><option>link=Софт для быстрого создания скриншотов</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Умение четко формулировать задачи'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Чувство прекрасного'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='В ЧЕМ ОСОБЕННОСТЬ?'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ЭТО РУТИНА?'])[1]/preceding::a[1]</option><option>//a[contains(text(),'Софт для быстрого создания скриншотов')]</option><option>//a[@href='http://app.prntscr.com/ru/']</option><option>//label/a</option><option>css=label &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>relative=parent<datalist><option>win_ser_2</option><option>relative=parent</option></datalist></td><td></td>
+</tr>
+<tr><td>storeTitle</td><td><datalist><option>title</option><option></option></datalist></td><td>title</td>
+</tr>
+<tr><td>echo</td><td>${title}<datalist><option>title</option><option>${title}</option></datalist></td><td></td>
+</tr>
+<tr><td>sendKeys</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Проверка отображения содержимого блока</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://blog.csssr.ru/qa-engineer/<datalist><option>http://blog.csssr.ru/qa-engineer/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=НАХОДИТЬ НЕСОВЕРШЕНСТВА<datalist><option>link=НАХОДИТЬ НЕСОВЕРШЕНСТВА</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='в процентах от рабочего времени'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ДЛЯ ЧЕГО ЭТО НУЖНО?'])[1]/preceding::a[3]</option><option>//a[contains(text(),'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]</option><option>xpath=(//a[contains(@href, '#')])[2]</option><option>//div[2]/a</option><option>css=div.graphs-errors.graph-active &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>3000<datalist><option>5000</option><option>3000</option></datalist></td><td></td>
+</tr>
+<tr><td>assertAttribute</td><td>css=div.info-errors@style<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Умение рассуждать логически'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Внимательность'])[1]/following::div[1]</option><option>//section[2]/div[2]</option><option>css=div.info-errors</option><option>css=div.info-errors@style</option></datalist></td><td>display: block;</td>
+</tr>
+<tr><td>click</td><td>link=НАХОДИТЬ НЕСОВЕРШЕНСТВА<datalist><option>link=НАХОДИТЬ НЕСОВЕРШЕНСТВА</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='в процентах от рабочего времени'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ДЛЯ ЧЕГО ЭТО НУЖНО?'])[1]/preceding::a[3]</option><option>//a[contains(text(),'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]</option><option>xpath=(//a[contains(@href, '#')])[2]</option><option>//div[2]/a</option><option>css=div.graphs-errors.graph-active &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>3000<datalist><option>5000</option><option>3000</option></datalist></td><td></td>
+</tr>
+<tr><td>assertAttribute</td><td>css=div.info-errors@style<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Умение рассуждать логически'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Внимательность'])[1]/following::div[1]</option><option>//section[2]/div[2]</option><option>css=div.info-errors</option><option>css=div.info-errors@style</option></datalist></td><td>display: block;</td>
+</tr>
+</tbody></table>
+</body>
+</html>
